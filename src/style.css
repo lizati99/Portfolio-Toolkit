@@ -1,0 +1,91 @@
+:root{
+    --color-bg:#222;
+    --color-text:#EEE;
+    --color-line:#00bcd4;
+    --color-btn:#00bcd4;
+    --color-hover-btn:#b2ebf2;
+}
+*{
+    font-family: 'Josefin Sans',sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--color-bg);
+    color:var(--color-text);
+}
+
+.container{
+    position: relative;
+    height: 100vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.nav{
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: default;
+}
+
+.nav h1::first-letter{
+    color: var(--color-line);
+}
+
+.role-container{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.role::after{
+    content: "";
+    height: 100%;
+    padding: 0 2px;
+    border-radius: 5px;
+    margin-left: 5px;
+    background-color: var(--color-line);
+}
+
+.btn{
+    display: inline-block;
+    background-color: var(--color-btn);
+    color: var(--color-bg);
+    padding: 1vw 2vw;
+    font-size: 2vw;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.next, .prev{
+    margin-bottom: 3vmin;
+}
+
+.next:hover, .prev:hover{
+    background-color: var(--color-hover-btn);
+    color: var(--color-bg);
+}
+
+.prev{
+    margin-right: 3vmin;
+}
+
+
+.writing{
+    color: var(--color-line);
+}
